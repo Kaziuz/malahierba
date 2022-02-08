@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  color: blue;
+}  
+::-webkit-scrollbar-track {
+  background:#fff;
+  width: 10px;
+  color: blue;
+}  
+::-webkit-scrollbar-thumb {
+  background: blue;  
+  width: .625rem;
+  color: blue;
+}
+/* Drawer navigation */
+/* This styles contein animation for icon drawer */
+.navigation {
+  position: absolute;
+  width: .188rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9995;
+}
+.navigation__checkbox { display: none; }
+.navigation__checkbox:checked ~ .navigation__background { 
+  transform: scale(80); 
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotateZ(135deg);
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotateZ(-135deg);
+}
+.navigation__button {
+  width: 2rem;
+  height: 2.6rem;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: .9rem;
+  top: 1rem;
+}
+/* Styles from vue framework for animation pruposes */
+.hamburguerToX-enter-active, .hamburguerToX-leave-active {
+  transition: rotateZ .25s;
+}
+
+.hamburguerToX-enter, .hamburguerToX-leave-to {
+  opacity: 0;
+}
+.navigation__icon {
+  position: relative;
+  margin-top: 1.32rem;
+}
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 100%;
+  height: .24rem;
+  background-color: #0000ff;
+  display: inline-block;
+}
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all .2s;
+}
+.navigation__icon::before {
+  top: -.68rem;
+}
+.navigation__icon::after {
+  top: .68rem;
+}
+/* end styles navigator animation */
+.navigation__wrap {
+  position: fixed;
+  top: 10rem;
+  left: -3.3rem;
+  transform: rotate( -90deg);
+  letter-spacing: .188rem;
+  font-size: 10pt;
+  text-decoration: none;
+  overflow-y: hidden;
+  font-weight: 700;
+}
+.navigator__instagram {
+  width: 30px;
+  height: 30px;
+  left: 18px;
+  bottom: 30px;
+  position: fixed;
+  z-index: 999;
+  mix-blend-mode: multiply;
+}
+
+/* Card overlay styles */
+.sub__container {
+  position: relative;
+  width: 92%;
+}
+.image-cover {
+  opacity: 1;
+  transition: .5s easy;
+}
+.container-overlay {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+}
+.sub__container:hover .image-cover {
+  opacity: 0;
+}
+.sub__container:hover .container-overlay {
+  opacity: 1;
+}
+.sub__container:nth-child(1) .image-cover {
+  opacity: 0;
+}
+.sub__container:nth-child(1) .container-overlay {
+  opacity: 1;
+}
+.sub__container:nth-child(1):hover .image-cover {
+  opacity: 1;
+}
+.sub__container:nth-child(1):hover .container-overlay {
+  opacity: 0;
+}
+/* Thumbnail artista image */
+.malahierba__thumb {
+  /* position: relative; */
+  /* left: 10vw; */
+  /* bottom: -4vw; */
+  /* padding-left: 0.5rem; */
+  /* padding-top: 0.2rem; */
+  /* padding-bottom: 0.2rem; */
+  /* transform: scale(.8); */
+}
+
+/* Popup */
+.wrap-popup {
+  padding: 0;
+  text-align: center;
+  right: calc(5% + 1.25rem);
+  transform: scale(0.9,0.9);
+  min-height: 40.625rem;
+  position: fixed;
+  z-index: 999;
+  width: 18.75rem;
+  top: .625rem;
+}
+.iframe-audio {
+  height: 3.75rem;
+  z-index: 0;
+  margin-left: -.313rem;
+  top: 0;
+  min-width: 110%;
+}
+.iframe-video {
+  width: 100%;
+  height: 10.625rem;
+  background: #fff;
+}
+.song {
+  width: 100%;
+  text-align: center;
+  padding-bottom: .313rem;
+  color: #26292C;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7pt;
+  letter-spacing: 0.0em;
+  line-height: .75rem;
+  background: #fff;
+  z-index: 20;
+  overflow: visible;
+}
+.names {
+  color: #0300ff;
+  letter-spacing: 0.1em;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+  background-color: transparent;
+  position: fixed;
+  bottom: calc(30% - 11rem);
+  width: 100%;
+  font-size: 14pt;
+}
+.collaboration {
+  width: 100%;
+  color: #0300ff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9pt;
+  text-align: center;
+  letter-spacing: 0.2em;
+  background: #fff;
+  overflow: visible;
+  position: relative;
+  padding: .188rem 0;
+  display: block;
+  top: .125rem;
+}
+.leaflet-container {
+	font: .938rem Courier, monospace;
+	letter-spacing: 0.03em;
+	line-height: .75rem;
+}
+
+/* Delete triangle tooltip leaflet*/
+.leaflet-tooltip-top:before, 
+.leaflet-tooltip-bottom:before, 
+.leaflet-tooltip-left:before, 
+.leaflet-tooltip-right:before {
+  border: none !important;
+}
+
+/* Custom class tooltip pane leaflet */
+.leaflet-tooltip-pane,
+.leaflet-tooltip-pane div {
+  background: white !important;
+  border: none !important;
+  border-radius: 0%;
+  box-shadow: none !important;
+  opacity: 1;
+}

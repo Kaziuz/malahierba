@@ -1,0 +1,119 @@
+[
+	{
+		"id": 0,
+		"placeDrawer": "----------",
+		"artistDrawer": "bonustrack",
+		"artistModal": "bonustrack #3",
+		"location": [81.3206,55.5936],
+		"playlistId": "3140prtyhjkl",
+		"urlImage": "box0.gif"
+	},
+	{
+		"id": 1,
+		"placeDrawer": "Angola",
+		"artistDrawer": "alogna",
+		"artistModal": "::: a l o g n a ---",
+		"location": [-9.2109,13.6522],
+		"playlistId": "3141prtyhjkl",
+		"urlImage": "box1.jpg"
+	},
+	{
+		"id": 2,
+		"placeDrawer": "Nueva Orleans",
+		"artistDrawer": "SecondLine",
+		"artistModal": "S e c o n d L i n e",
+		"location": [29.9655,-90.0681],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box2.jpg"
+	},
+	{
+		"id": 3,
+		"placeDrawer": "Barrio Aranjuez",
+		"artistDrawer": "Alcolirykoz",
+		"artistModal": "::: Alcolirykoz ---",
+		"location": [6.2853, -75.5564],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box3.jpg"
+	},
+	{
+		"id": 4,
+		"placeDrawer": "México D.F.",
+		"artistDrawer": "Los Rupestres",
+		"artistModal": "Los Rupestres",
+		"location": [19.4418, -99.1567],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box4.jpg"
+	},
+	{
+		"id": 5,
+		"placeDrawer": "............",
+		"artistDrawer": "bonustrack",
+		"artistModal": "bonustrack #2",
+		"location": [80.1825, -99.2910],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box5.jpg"
+	},
+	{
+		"id": 6,
+		"placeDrawer": "Cuba",
+		"artistDrawer": "Para mi isla un son",
+		"artistModal": ":Para mi isla un son:",
+		"location": [23.0696, -82.3535],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box6.jpg"
+	},
+	{
+		"id": 7,
+		"placeDrawer": "Medellín",
+		"artistDrawer": "nílledeM",
+		"artistModal": "n Í l l e d e M",
+		"location": [6.2102, -75.5714],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box7.jpg"
+	},
+	{
+		"id": 8,
+		"placeDrawer": "México D.F",
+		"artistDrawer": "León Chávez + La Lengua",
+		"artistModal": "León Chávez + La Lengua",
+		"location": [19.4198, -99.1552],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box8.jpg"
+	},
+	{
+		"id": 9,
+		"placeDrawer": "San Basilio De Palenque",
+		"artistDrawer": "Sexteto Tabalá",
+		"artistModal": "Sexteto Tabalá",
+		"location": [10.103318, -75.199013],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box9.jpg"
+	},
+	{
+		"id": 10,
+		"placeDrawer": "&&&&&&&&&&&&&",
+		"artistDrawer": "bonustrack",
+		"artistModal": "bonustrack #1",
+		"location": [72.1608, 70.9990],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box10.jpg"
+	},
+	{
+		"id": 11,
+		"placeDrawer": "Andalucía",
+		"artistDrawer": "Navaja",
+		"artistModal": "::: Navaja ---",
+		"location": [37.3826, -5.99629],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box11.jpg"
+	},
+	{
+		"id": 12,
+		"placeDrawer" : "Cali Calentura",
+		"artistDrawer": "El puto amo de la anarquía",
+		"artistModal": "Manu Chao y la Ventura en la Cali Calentura",
+		"location": [3.4218755, -76.5362229],
+		"playlistId": "3144prtyhjkl",
+		"urlImage": "box12.jpg"
+	}
+]
